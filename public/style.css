@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #001f3f;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    border: 2px solid #fff;
+    margin-top: 10px;
+    background: #004080;
+  }
+  
