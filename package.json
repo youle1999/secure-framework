@@ -12,5 +12,8 @@
   "dependencies": {
     "express": "^4.21.1",
     "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "csso-cli": "^4.0.2"
   }
 }

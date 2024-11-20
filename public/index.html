@@ -3,13 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catch the Stars Game</title>
-  <link rel="stylesheet" href="style.css">
+  <title>TAN YOULE</title>
+  <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="icon" href="blue_image.png" type="image/png">
+
   <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Catch the Falling Stars!</h1>
-  <canvas id="gameCanvas"></canvas>
-  <p>Use the left and right arrow keys to move your basket!</p>
+  <!-- Start Screen -->
+  <div id="startScreen">
+    <h1>Catch the Falling Stars!</h1>
+    <p>Use the <strong>on-screen buttons</strong> or arrow keys to play!</p>
+    <button id="startButton">Start Game</button>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas" style="display: none;"></canvas>
+
+  <!-- Game Over Screen -->
+  <div id="gameOverScreen" style="display: none;">
+    <h1>Game Over!</h1>
+    <p id="finalScore"></p>
+    <button id="restartButton">Restart Game</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 TAN YOULE. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
