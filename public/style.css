@@ -1,21 +1,137 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #001f3f;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #001f3f;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+canvas {
+  border: 2px solid white;
+  background-color: #004080;
+}
+
+#startScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  text-align: center;
+}
+
+#startScreen h1 {
+  margin-bottom: 10px; /* Add spacing below the title */
+  font-size: 3rem; /* Larger title */
+}
+
+#startScreen p {
+  margin-bottom: 20px; /* Add spacing below the description */
+  font-size: 1.2rem;
+}
+
+#startButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startButton:hover {
+  background: #0056b3;
+}
+
+#gameOverScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Take up the full height of the viewport */
+  text-align: center;
+}
+
+#gameOverScreen h1 {
+  margin-bottom: 10px; /* Add spacing below the Game Over title */
+  font-size: 3rem; /* Increase the size for better visibility */
+}
+
+#finalScore {
+  margin-bottom: 20px; /* Add spacing below the score */
+  font-size: 1.5rem; /* Slightly increase the size */
+}
+
+#restartButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restartButton:hover {
+  background: #0056b3;
+}
+/* Ensure the canvas and game screens are responsive */
+canvas {
+  width: 100%;
+  max-width: 800px; /* Limit the width for larger screens */
+  height: auto;
+  background-color: #004080;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Style the touch controls */
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: #0056b3;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
   h1 {
-    margin-top: 20px;
+    font-size: 2rem;
   }
-  
-  canvas {
-    border: 2px solid #fff;
-    margin-top: 10px;
-    background: #004080;
+
+  p {
+    font-size: 1rem;
   }
-  
+
+  #startButton, #restartButton {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  #controls button {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+  }
+}
+
